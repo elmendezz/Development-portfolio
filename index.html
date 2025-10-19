@@ -157,6 +157,12 @@
       object-fit: contain;
     }
 
+    /* Solución para el icono de Photo Editor */
+    .photo-editor-icon {
+      mix-blend-mode: lighten; /* Ayuda a que el fondo oscuro del icono se mezcle con el fondo de la tarjeta */
+      border-radius: 4px; /* Suaviza las esquinas del icono */
+    }
+
     .card li strong {
       color: #c9d1d9;
     }
@@ -235,15 +241,16 @@
         <strong>VivaCut</strong> <span>Hobby</span>
       </li>
       
-      <!-- Photo Editor: Icono actualizado -->
-      <li><img src="https://liteapks.com/wp-content/uploads/2022/04/photo-editor-pro.png" alt="Photo Editor Pro icon" class="list-icon-img"> <strong>Photo Editing</strong> <span>Pro - Hobby</span></li>
+      <!-- Photo Editor: Icono original con clase y estilo aplicados -->
+      <li><img src="https://liteapks.com/wp-content/uploads/2022/04/photo-editor-pro.png" alt="Photo Editor Pro icon" class="list-icon-img photo-editor-icon"> <strong>Photo Editing</strong> <span>Pro - Hobby</span></li>
     </ul>
   </div>
 
   <div class="card">
     <h3><i class="fa-solid fa-language"></i> Languages</h3>
     <ul>
-      <li><i class="fa-solid fa-comment-dots"></i> <strong>Spanish</strong> <span>Native (MX / ES)</span></li>
+      <li><i class="fa-solid fa-comment-dots"></i>
+ <strong>Spanish</strong> <span>Native (MX / ES)</span></li>
       <li><i class="fa-solid fa-comment-dots"></i> <strong>English</strong> <span>Advanced (US)</span></li>
     </ul>
   </div>
